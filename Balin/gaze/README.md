@@ -18,3 +18,9 @@ set_env.sh
 sh docker_build.sh
 sh docker_run.sh
 ```
+
+# Test
+- Run involution_cuda to test
+```
+python involution_test.py
+```
