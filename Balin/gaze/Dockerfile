@@ -37,7 +37,6 @@ RUN pip install opencv-python==4.4.0.44
 # Basic Deep Leaning
 RUN pip install scikit-image
 RUN pip install scikit-learn
-RUN pip install matplotlib
 RUN pip install easydict
 RUN pip install requests
 RUN pip install pyyaml
@@ -47,10 +46,13 @@ RUN pip install natsort==7.1.1
 RUN pip install kornia==0.4.1
 RUN pip install tensorboard==2.3.0
 RUN pip install torchvision==0.8.1
+RUN pip install tensorboardX
 RUN pip install tqdm==4.51.0
 RUN pip install onnxruntime==1.6.0
-RUN pip install scipy==1.7.1
-RUN pip install Pillow==8.3.1
+RUN pip install scipy==1.1.0
+RUN pip install pandas
+RUN pip install cupy-cuda111
+RUN pip install Pillow==5.2.0
 RUN pip install mmcv-full==1.3.9 -f https://download.openmmlab.com/mmcv/dist/cu111/torch1.9.0/index.html
 
 # Sometimes may use root.

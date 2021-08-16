@@ -5,4 +5,4 @@ set -e
 # Image
 IMAGE="gaze"
 
-docker build  -t $IMAGE .
+docker build -t $IMAGE .
