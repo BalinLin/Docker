@@ -1,0 +1,1 @@
+cp ./WIDERFace_DSFD_RES152.pth /root/.cache/torch/hub/checkpoints

@@ -1,0 +1,2 @@
+wget https://download.pytorch.org/models/alexnet-owt-4df8aa71.pth
+cp alexnet-owt-4df8aa71.pth /home/user/.cache/torch/hub/checkpoints/alexnet-owt-4df8aa71.pth

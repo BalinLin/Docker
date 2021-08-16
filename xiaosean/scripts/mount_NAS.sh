@@ -1,0 +1,1 @@
+sudo mount 140.118.156.51:/volume1/homes/ ~/Desktop/NAS
