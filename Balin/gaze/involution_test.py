@@ -1,11 +1,11 @@
 #! /usr/bin/env python3
 # coding=utf-8
 
-import cv2, torch
+import torch
 import numpy as np
 import matplotlib.pyplot as plt
-from involution.cls.mmcls.models.utils.involution_cuda import involution
-# from involution.cls.mmcls.models.utils.involution_naive import involution
+from involution.involution_cuda import involution
+# from involution.involution_naive import involution
 
 if __name__ == "__main__":
     ## Involution
@@ -16,12 +16,12 @@ if __name__ == "__main__":
     device = torch.device('cuda', 0)
 
     if torch.cuda.is_available():
-        iinput = torch.randn(batchsize, inputchannel, 4, 4).cuda(device)
+        input = torch.randn(batchsize, inputchannel, 4, 4).cuda(device)
         conv2 = involution(inputchannel, midchannel, stride).cuda(device)
     else:
-        iinput = torch.randn(batchsize, inputchannel, 4, 4)
+        input = torch.randn(batchsize, inputchannel, 4, 4)
         conv2 = involution(inputchannel, midchannel, stride)
 
-    out = conv2(iinput)
+    out = conv2(input)
     print(out)
     print(out.shape)
