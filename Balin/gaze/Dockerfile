@@ -44,9 +44,10 @@ RUN pip install pyyaml
 # requirements
 RUN pip install natsort==7.1.1
 RUN pip install kornia==0.4.1
-RUN pip install tensorboard==2.3.0
 RUN pip install torchvision==0.8.1
-RUN pip install tensorboardX
+RUN pip install tensorflow==1.14.0
+RUN pip install tensorboard==1.14.0
+RUN pip install tensorboardX==1.8.0
 RUN pip install tqdm==4.51.0
 RUN pip install onnxruntime==1.6.0
 RUN pip install scipy==1.1.0

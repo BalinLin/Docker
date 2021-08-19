@@ -7,7 +7,7 @@ VOLUMES="-v=/home/$USER/.ssh/:/home/user/.ssh/
          -v=/home/$USER/exper/gaze/:/gaze/"
 
 # Port
-PORT="-p 8701:22"
+PORT="-p 8701:22 -p 6006:6006"
 
 # GPU
 GPU="--gpus all"
