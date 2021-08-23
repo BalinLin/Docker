@@ -4,7 +4,7 @@ set -e
 
 # Volumes
 VOLUMES="-v=/home/$USER/.ssh/:/home/user/.ssh/
-         -v=/home/$USER/exper/gaze/:/gaze/"
+         -v=/home/$USER/exper/:/exper/"
 
 # Port
 PORT="-p 8701:22 -p 6006:6006"
