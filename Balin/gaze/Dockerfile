@@ -54,6 +54,7 @@ RUN pip install scipy==1.1.0
 RUN pip install pandas
 RUN pip install cupy-cuda111
 RUN pip install Pillow==5.2.0
+RUN pip install wandb==0.12.1
 RUN pip install mmcv-full==1.3.9 -f https://download.openmmlab.com/mmcv/dist/cu111/torch1.9.0/index.html
 
 # Sometimes may use root.
