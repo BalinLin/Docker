@@ -2,6 +2,7 @@ FROM pytorch/pytorch:1.9.0-cuda11.1-cudnn8-devel
 LABEL authors="Balin"
 ENV DEBIAN_FRONTEND=noninteractive
 
+# RUN sed -i'' 's/archive\.ubuntu\.com/us\.archive\.ubuntu\.com/' /etc/apt/sources.list
 # Install some basic utilities
 RUN apt-get update
 RUN apt-get install -y \

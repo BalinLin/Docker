@@ -2,6 +2,9 @@
 # If error, exit.
 set -e
 
+# Name
+NAME="--name balin"
+
 # Volumes
 VOLUMES="-v=/home/$USER/.ssh/:/home/user/.ssh/
          -v=/home/$USER/exper/:/exper/"
@@ -20,8 +23,10 @@ OTHERS="--shm-size 120G"
 
 # Image
 IMAGE="gaze"
+IMAGE="balinlin/gaze:1.0.0"
+
 
 # Command
 # xhost +
-docker run -it $VOLUMES $PORT $GPU $DIS $OTHERS $IMAGE
+docker run -it $NAME $VOLUMES $PORT $GPU $DIS $OTHERS $IMAGE
 # docker run -it $VOLUMES $PORT $GPU $OTHERS $IMAGE
